@@ -12,6 +12,10 @@
 #define ___      &trans
 #define _x_      &none
 
+#define L_BS    0
+#define L_NM    1
+#define L_MD    2
+
 // Home row mods
 #define HRML(k1, k2, k3, k4) &hml LSHFT k1 &hml LCTRL k2 &hml LALT  k3 &hml LGUI  k4
 #define HRMR(k1, k2, k3, k4) &hmr RGUI  k1 &hmr RALT  k2 &hmr RCTRL k3 &hmr RSHFT k4
@@ -58,29 +62,29 @@
             >;
             };
 
-            media_layer { // layer 1 
-            bindings = <
-        // ╭─────────────────────────────────────────────────╮   ╭─────────────────────────────────────────────────╮
-        // │    Q    │    W    │    F    │    P    │    B    │   │    J    │  VOL DN │ VOL UP  │  MUTE   │         │
-    _x_     &kp Q     &kp W     &kp F     &kp P     &kp B         &kp J     &kp L     &kp U     &kp Y     &none         _x_ 
-        // ├─────────┼─────────┼─────────┼─────────┼─────────┤   ├─────────┼─────────┼─────────┼─────────┼─────────┤
-        // │    A    │    R    │    S    │    T    │    G    │   │    M    │   PREV  │  PL/PS  │  NEXT   │    O    │
-    _x_     HRML(A,       R,        S,        T)    &kp G         &kp M     HRMR(N,       E,        I,        O)        _x_ 
-        // ├─────────┼─────────┼─────────┼─────────┼─────────┤   ├─────────┼─────────┼─────────┼─────────┼─────────┤
-        // │  BTCLR  │   BT1   │   BT2   │   BT3   │         │   │    K    │  BRI DN │ BRI UP  │  PSCRN  │         │
-    _x_     &kp Z     &kp X     &kp C     &kp D     &kp V         &kp K     &kp H     &kp COMMA &kp DOT   &none         _x_ 
-        // ╰─────────┼─────────┼─────────┼─────────┼─────────┤   ├─────────┼─────────┼─────────┼─────────┼─────────╯
-        //                     │         │         │ SPC/TAB │   │  ENTER  │  BS/DEL │         │
-                                &none     &mo 1     &mt TAB SPACE &kp RET   &mt DEL BSPC &none
-        //                     ╰─────────────────────────────╯   ╰─────────────────────────────╯
-            >;
-            };
+    //         media_layer { // layer 1 
+    //         bindings = <
+    //     // ╭─────────────────────────────────────────────────╮   ╭─────────────────────────────────────────────────╮
+    //     // │    Q    │    W    │    F    │    P    │    B    │   │    J    │  VOL DN │ VOL UP  │  MUTE   │         │
+    // _x_     &kp Q     &kp W     &kp F     &kp P     &kp B         &kp J     &kp L     &kp U     &kp Y     &none         _x_ 
+    //     // ├─────────┼─────────┼─────────┼─────────┼─────────┤   ├─────────┼─────────┼─────────┼─────────┼─────────┤
+    //     // │    A    │    R    │    S    │    T    │    G    │   │    M    │   PREV  │  PL/PS  │  NEXT   │    O    │
+    // _x_     HRML(A,       R,        S,        T)    &kp G         &kp M     HRMR(N,       E,        I,        O)        _x_ 
+    //     // ├─────────┼─────────┼─────────┼─────────┼─────────┤   ├─────────┼─────────┼─────────┼─────────┼─────────┤
+    //     // │  BTCLR  │   BT1   │   BT2   │   BT3   │         │   │    K    │  BRI DN │ BRI UP  │  PSCRN  │         │
+    // _x_     &kp Z     &kp X     &kp C     &kp D     &kp V         &kp K     &kp H     &kp COMMA &kp DOT   &none         _x_ 
+    //     // ╰─────────┼─────────┼─────────┼─────────┼─────────┤   ├─────────┼─────────┼─────────┼─────────┼─────────╯
+    //     //                     │         │         │ SPC/TAB │   │  ENTER  │  BS/DEL │         │
+    //                             &none     &mo 1     &mt TAB SPACE &kp RET   &mt DEL BSPC &none
+    //     //                     ╰─────────────────────────────╯   ╰─────────────────────────────╯
+    //         >;
+    //         };
 
             numpad_layer { // layer 1 (default)
             bindings = <
         // ╭─────────────────────────────────────────────────╮   ╭─────────────────────────────────────────────────╮
         // │    !    │    %    │    ^    │    <    │    >    │   │    7    │    8    │    9    │   BSCP  │    =    │
-    _x_     &kp EXCL  &kp PRCNT &kp CARET &kp LT    &kp GT        &kp N7    &kp N8    &kp N9    &kp BSCP  &kp KP_EQUAL      _x_ 
+    _x_     &kp EXCL  &kp PRCNT &kp CARET &kp LT    &kp GT        &kp N7    &kp N8    &kp N9    &kp BSCP  &kp EQUAL         _x_ 
         // ├─────────┼─────────┼─────────┼─────────┼─────────┤   ├─────────┼─────────┼─────────┼─────────┼─────────┤
         // │    :    │    \    │    _    │    (    │    )    │   │    4    │    5    │    6    │    -    │    /    │
     _x_     &kp COLON &kp BSLH  &kp UNDER &kp LPAR  &kp RPAR      &kp N4    &kp N5    &kp N6  &kp KP_MINUS  &kp KP_DIVIDE   _x_ 
