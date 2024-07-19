@@ -8,8 +8,8 @@
 #include <dt-bindings/zmk/keys.h>
 #include <dt-bindings/zmk/bt.h>
 
-#include "../zmk-helper/helper.h"
-#include "../zmk-helper/keypos_def/keypos_36keys.h"
+#include "../zmk-helpers/helper.h"
+#include "../zmk-helpers/keypos_def/keypos_36keys.h"
 
 // Alias
 #define ___      &trans
