@@ -103,28 +103,32 @@
     _x_     &kp Z     &kp X     &kp C     &kp D     &kp V         &kp K     &kp H     &kp COMMA &kp DOT   &none         _x_ 
         // ╰─────────┼─────────┼─────────┼─────────┼─────────┤   ├─────────┼─────────┼─────────┼─────────┼─────────╯
         //                     │         │         │ SPC/TAB │   │  ENTER  │  BS/DEL │         │
-                                &kp LSHFT &none     &mt TAB SPACE &kp RET   &mt DEL BSPC &none
+                                &kp LSHFT &mo 1     &mt TAB SPACE &kp RET   &mt DEL BSPC &none
         //                     ╰─────────────────────────────╯   ╰─────────────────────────────╯
             >;
             };
 
-    //         media_layer { // layer 1 
-    //         bindings = <
-    //     // ╭─────────────────────────────────────────────────╮   ╭─────────────────────────────────────────────────╮
-    //     // │    Q    │    W    │    F    │    P    │    B    │   │    J    │  VOL DN │ VOL UP  │  MUTE   │         │
-    // _x_     &kp Q     &kp W     &kp F     &kp P     &kp B         &kp J     &kp L     &kp U     &kp Y     &none         _x_ 
-    //     // ├─────────┼─────────┼─────────┼─────────┼─────────┤   ├─────────┼─────────┼─────────┼─────────┼─────────┤
-    //     // │    A    │    R    │    S    │    T    │    G    │   │    M    │   PREV  │  PL/PS  │  NEXT   │    O    │
-    // _x_     HRML(A,       R,        S,        T)    &kp G         &kp M     HRMR(N,       E,        I,        O)        _x_ 
-    //     // ├─────────┼─────────┼─────────┼─────────┼─────────┤   ├─────────┼─────────┼─────────┼─────────┼─────────┤
-    //     // │  BTCLR  │   BT1   │   BT2   │   BT3   │         │   │    K    │  BRI DN │ BRI UP  │  PSCRN  │         │
-    // _x_     &kp Z     &kp X     &kp C     &kp D     &kp V         &kp K     &kp H     &kp COMMA &kp DOT   &none         _x_ 
-    //     // ╰─────────┼─────────┼─────────┼─────────┼─────────┤   ├─────────┼─────────┼─────────┼─────────┼─────────╯
-    //     //                     │         │         │ SPC/TAB │   │  ENTER  │  BS/DEL │         │
-    //                             &none     &mo 1     &mt TAB SPACE &kp RET   &mt DEL BSPC &none
-    //     //                     ╰─────────────────────────────╯   ╰─────────────────────────────╯
-    //         >;
-    //         };
+#define _BT_SEL_KEYS_ &bt BT_CLR &bt BT_SEL 0 &bt BT_SEL 1 &bt BT_SEL 2 &bt BT_SEL 3  
+#define _VOL_KEYS_ &kp C_VOL_DN &kp C_VOL_UP &kp C_MUTE
+#define _PLAY_KEYS_ &kp C_PREV &kp C_PP &kp C_NEXT
+#define _DISP_KEYS_ &kp C_BRI_DN &kp C_BRI_UP &kp PSCRN
+            media_layer { // layer 1 
+            bindings = <
+        // ╭─────────────────────────────────────────────────╮   ╭─────────────────────────────────────────────────╮
+        // │         │         │         │         │         │   │         │  VOL DN │ VOL UP  │  MUTE   │         │
+    _x_     &none     &none     &none     &none     &none         &kp J               _VOL_KEYS_          &none         _x_ 
+        // ├─────────┼─────────┼─────────┼─────────┼─────────┤   ├─────────┼─────────┼─────────┼─────────┼─────────┤
+        // │         │         │         │         │         │   │         │   PREV  │  PL/PS  │  NEXT   │         │
+    _x_     &none     &none     &none     &none     &none         &none              _PLAY_KEYS_          &none         _x_ 
+        // ├─────────┼─────────┼─────────┼─────────┼─────────┤   ├─────────┼─────────┼─────────┼─────────┼─────────┤
+        // │  BTCLR  │   BT0   │   BT1   │   BT2   │   BT3   │   │         │  BRI DN │ BRI UP  │  PSCRN  │         │
+    _x_                       _BT_SEL_KEYS_                       &none              _DISP_KEYS_          &none         _x_ 
+        // ╰─────────┼─────────┼─────────┼─────────┼─────────┤   ├─────────┼─────────┼─────────┼─────────┼─────────╯
+        //                     │         │         │ SPC/TAB │   │  ENTER  │  BS/DEL │         │
+                                &none     &none     &mt TAB SPACE &kp RET   &mt DEL BSPC &none
+        //                     ╰─────────────────────────────╯   ╰─────────────────────────────╯
+            >;
+            };
 
     //         numpad_layer { // layer 1 (default)
     //         bindings = <
