@@ -97,7 +97,7 @@
     _x_     &kp Q     &kp W     &kp F     &kp P     &kp B         &kp J     &kp L     &kp U     &kp Y     &none         _x_ 
         // ├─────────┼─────────┼─────────┼─────────┼─────────┤   ├─────────┼─────────┼─────────┼─────────┼─────────┤
         // │    A    │    R    │    S    │    T    │    G    │   │    M    │    N    │    E    │    I    │    O    │
-    _x_     &kp A     &kpR      &kp S     &kp T     &kp G         &kp M     &kp N     &kp E     &kp I     &kp O         _x_ 
+    _x_     &kp A     &kp R     &kp S     &kp T     &kp G         &kp M     &kp N     &kp E     &kp I     &kp O         _x_ 
         // ├─────────┼─────────┼─────────┼─────────┼─────────┤   ├─────────┼─────────┼─────────┼─────────┼─────────┤
         // │    Z    │    X    │    C    │    D    │    V    │   │    K    │    H    │    ,    │    .    │         │
     _x_     &kp Z     &kp X     &kp C     &kp D     &kp V         &kp K     &kp H     &kp COMMA &kp DOT   &none         _x_ 
