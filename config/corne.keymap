@@ -128,12 +128,12 @@
             combo_homel {
                 timeout-ms = <100>;
                 key-positions = <LM1 LM2 LM3>;    // left home row middle
-                bindings = <&tog L_BS>;
+                bindings = <&to L_BS>;
             };
             combo_homer {
                 timeout-ms = <100>;
                 key-positions = <RM1 RM2 RM3>;    // right home row middle
-                bindings = <&tog L_BS>;
+                bindings = <&to L_BS>;
             };
             combo_numpad {
                 timeout-ms = <100>;
@@ -178,7 +178,7 @@
     _x_     &kp Z     &kp X     &kp C     &kp D     &kp V         &kp K     &kp H     &kp COMMA &kp DOT   &kp SLASH     _x_ 
         // ╰─────────┼─────────┼─────────┼─────────┼─────────┤   ├─────────┼─────────┼─────────┼─────────┼─────────╯
         //                     │         │   BASE  │   SPC   │   │  ENTER  │   BSPC  │         │
-                                &mo L_SM  &tog L_BS &kp SPACE     &kp RET   &kp BSPC  &mo L_SM
+                                &mo L_SM  &to  L_BS &kp SPACE     &kp RET   &kp BSPC  &mo L_SM
         //                     ╰─────────────────────────────╯   ╰─────────────────────────────╯
             >;
             };
@@ -200,7 +200,7 @@
     _x_                       _BT_SEL_KEYS_                       &none              _DISP_KEYS_          &none         _x_ 
         // ╰─────────┼─────────┼─────────┼─────────┼─────────┤   ├─────────┼─────────┼─────────┼─────────┼─────────╯
         //                     │         │   BASE  │   SPC   │   │  ENTER  │   BSCP  │         │
-                                &none     &tog L_BS &kp SPACE     &kp RET   &kp BSPC  &none
+                                &none     &to L_BS  &kp SPACE     &kp RET   &kp BSPC  &none
         //                     ╰─────────────────────────────╯   ╰─────────────────────────────╯
             >;
             };
@@ -218,7 +218,7 @@
     _x_     &none     &kp LBRC  &kp RBRC  &kp LBKT  &kp RBKT      &kp N1    &kp N2    &kp N3  &kp KP_PLUS &kp KP_MULTIPLY   _x_ 
         // ╰─────────┼─────────┼─────────┼─────────┼─────────┤   ├─────────┼─────────┼─────────┼─────────┼─────────╯
         //                     │         │   BASE  │   SPC   │   │  ENTER  │    0    │    .    │
-                                &none     &tog L_BS &kp SPACE     &kp RET   &kp N0     &kp DOT
+                                &none     &to L_BS  &kp SPACE     &kp RET   &kp N0     &kp DOT
         //                     ╰─────────────────────────────╯   ╰─────────────────────────────╯
             >;
             };
@@ -236,7 +236,7 @@
  _x_ &kp KP_PLUS &kp KP_MULTIPLY &kp N1   &kp N2    &kp N3        &none     &none     &none     &none     &none             _x_ 
         // ╰─────────┼─────────┼─────────┼─────────┼─────────┤   ├─────────┼─────────┼─────────┼─────────┼─────────╯
         //                     │    0    │    .    │   SPC   │   │  ENTER  │   BSPC  │  BASE   │
-                                &kp N0    &kp DOT   &kp SPACE     &kp RET   &kp BSPC  &tog L_BS
+                                &kp N0    &kp DOT   &kp SPACE     &kp RET   &kp BSPC  &to L_BS
         //                     ╰─────────────────────────────╯   ╰─────────────────────────────╯
             >;
             };
@@ -254,7 +254,7 @@
  _x_ &kp CARET &kp KP_DIVIDE &kp KP_MULTIPLY &kp BSLH &kp UNDER   &kp TILDE &kp DLLR  &kp LBRC  &kp RBRC  &kp AT        _x_ 
         // ╰─────────┼─────────┼─────────┼─────────┼─────────┤   ├─────────┼─────────┼─────────┼─────────┼─────────╯
         //                     │         │   BASE  │   SPC   │   │  ENTER  │  BSPC   │         │
-                                &none     &tog L_BS &kp SPACE     &kp RET   &kp BSPC  &none
+                                &none     &to L_BS  &kp SPACE     &kp RET   &kp BSPC  &none
         //                     ╰─────────────────────────────╯   ╰─────────────────────────────╯
             >;
             };
