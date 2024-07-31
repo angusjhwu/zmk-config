@@ -168,8 +168,8 @@
             default_layer { // layer 0 (defaultm coleman-dh w/ bspc del)
             bindings = <
         // ╭─────────────────────────────────────────────────╮   ╭─────────────────────────────────────────────────╮
-        // │    Q    │    W    │    F    │    P    │    B    │   │    J    │    L    │    U    │    Y    │   DEL   │
-    _x_     &kp Q     &kp W     &kp F     &kp P     &kp B         &kp J     &kp L     &kp U     &kp Y     &kp DEL       _x_ 
+        // │    Q    │    W    │    F    │    P    │    B    │   │    J    │    L    │    U    │    Y    │    '    │
+    _x_     &kp Q     &kp W     &kp F     &kp P     &kp B         &kp J     &kp L     &kp U     &kp Y     &kp SQT       _x_ 
         // ├─────────┼─────────┼─────────┼─────────┼─────────┤   ├─────────┼─────────┼─────────┼─────────┼─────────┤
         // │    A    │    R    │    S    │    T    │    G    │   │    M    │    N    │    E    │    I    │    O    │
     _x_     HRML(A,       R,        S,        T)    &kp G         &kp M     HRMR(N,       E,        I,        O)        _x_ 
@@ -230,7 +230,7 @@
     _x_     &kp EXCL  &kp PRCNT &kp N7    &kp N8    &kp N9        &kp HOME  &none     &kp UP    &none     &kp PG_UP         _x_ 
         // ├─────────┼─────────┼─────────┼─────────┼─────────┤   ├─────────┼─────────┼─────────┼─────────┼─────────┤
         // │    -    │    /    │    4    │    5    │    6    │   │   END   │    <-   │    V    │    ->   │  PG_DN  │
-    _x_   &kp KP_MINUS &kp BSLH &kp N4    &kp N5    &kp N6        &kp END   &kp LEFT  &kp DOWN  &kp RIGHT &kp PG_DN         _x_ 
+    _x_     HRML(KP_MINUS, BSLH,   N4,       N5)    &kp N6        &kp END   HRMR(LEFT,  DOWN,     RIGHT,    PG_DN)         _x_ 
         // ├─────────┼─────────┼─────────┼─────────┼─────────┤   ├─────────┼─────────┼─────────┼─────────┼─────────┤
         // │    +    │    *    │    1    │    2    │    3    │   │         │         │         │         │         │
  _x_ &kp KP_PLUS &kp KP_MULTIPLY &kp N1   &kp N2    &kp N3        &none     &none     &none     &none     &none             _x_ 
@@ -248,7 +248,7 @@
     _x_     &kp GRAVE &kp LT    &kp GT    &kp DQT   &kp SQT       &kp AMPS  &none     &kp LBKT  &kp RBKT  &kp PRCNT     _x_ 
         // ├─────────┼─────────┼─────────┼─────────┼─────────┤   ├─────────┼─────────┼─────────┼─────────┼─────────┤
         // │    !    │    -    │    +    │    =    │    #    │   │    |    │    :    │    (    │    )    │    ?    │
-    _x_     &kp EXCL &kp KP_MINUS &kp KP_PLUS &kp EQUAL &kp HASH  &kp PIPE  &kp COLON &kp LPAR  &kp RPAR  &kp QMARK     _x_ 
+    _x_     HRML(EXCL, KP_MINUS, KP_PLUS,   EQUAL)  &kp HASH      &kp PIPE  HRMR(COLON,  LPAR,    RPAR,     QMARK)      _x_ 
         // ├─────────┼─────────┼─────────┼─────────┼─────────┤   ├─────────┼─────────┼─────────┼─────────┼─────────┤
         // │    ^    │    /    │    *    │    \    │    _    │   │    ~    │    $    │    {    │    }    │    @    │
  _x_ &kp CARET &kp KP_DIVIDE &kp KP_MULTIPLY &kp BSLH &kp UNDER   &kp TILDE &kp DLLR  &kp LBRC  &kp RBRC  &kp AT        _x_ 
