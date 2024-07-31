@@ -178,7 +178,7 @@
     _x_     &kp Z     &kp X     &kp C     &kp D     &kp V         &kp K     &kp H     &kp COMMA &kp DOT   &kp SLASH     _x_ 
         // ╰─────────┼─────────┼─────────┼─────────┼─────────┤   ├─────────┼─────────┼─────────┼─────────┼─────────╯
         //                     │         │   BASE  │   SPC   │   │  ENTER  │   BSPC  │         │
-                                &mo L_MD  &tog L_BS &kp SPACE     &kp RET   &kp BSPC  &mo L_SM
+                                &mo L_SM  &tog L_BS &kp SPACE     &kp RET   &kp BSPC  &mo L_SM
         //                     ╰─────────────────────────────╯   ╰─────────────────────────────╯
             >;
             };
