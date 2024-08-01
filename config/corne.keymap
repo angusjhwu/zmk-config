@@ -178,9 +178,9 @@
     _x_     &kp Z     &kp X     &kp C     &kp D     &kp V         &kp K     &kp H     &kp COMMA &kp DOT   &kp SLASH     _x_ 
         // ╰─────────┼─────────┼─────────┼─────────┼─────────┤   ├─────────┼─────────┼─────────┼─────────┼─────────╯
         //                     │         │   BASE  │   SPC   │   │  ENTER  │   BSPC  │         │
-                                &mo L_SM  &to  L_BS &kp SPACE     &kp RET   &kp BSPC  &mo L_SM
+                                &mo L_SM  &to L_BS  &kp SPACE     &kp RET   &kp BSPC  &mo L_SM
         //                     ╰─────────────────────────────╯   ╰─────────────────────────────╯
-            >;
+            >; // add TAB?? ***************
             };
 
 #define _BT_SEL_KEYS_ &bt BT_SEL 0 &bt BT_SEL 1 &bt BT_SEL 2 &bt BT_SEL 3 &bt BT_CLR
@@ -190,14 +190,14 @@
             media_layer { // layer 1 
             bindings = <
         // ╭─────────────────────────────────────────────────╮   ╭─────────────────────────────────────────────────╮
-        // │         │         │         │         │         │   │         │  VOL DN │ VOL UP  │  MUTE   │         │
-    _x_     &none     &none     &none     &none     &none         &none               _VOL_KEYS_          &none         _x_ 
+        // │         │         │         │         │  BTCLR  │   │   BT0   │  VOL DN │ VOL UP  │  MUTE   │         │
+    _x_     &kp F1    &kp F2    &kp F3    &kp F4    &bt BT_CLR    &bt BT_SEL 0        _VOL_KEYS_          &none         _x_ 
         // ├─────────┼─────────┼─────────┼─────────┼─────────┤   ├─────────┼─────────┼─────────┼─────────┼─────────┤
-        // │         │         │         │         │         │   │         │   PREV  │  PL/PS  │  NEXT   │         │
-    _x_     &none     &none     &none     &none     &none         &none              _PLAY_KEYS_          &none         _x_ 
+        // │         │         │         │         │   BT3   │   │   BT1   │   PREV  │  PL/PS  │  NEXT   │         │
+    _x_     &kp F5    &kp F6    &kp F7    &kp F8    &bt BT_SEL 3  &bt BT_SEL 1       _PLAY_KEYS_          &none         _x_ 
         // ├─────────┼─────────┼─────────┼─────────┼─────────┤   ├─────────┼─────────┼─────────┼─────────┼─────────┤
-        // │   BT0   │   BT1   │   BT2   │   BT3   │  BTCLR  │   │         │  BRI DN │ BRI UP  │  PSCRN  │         │
-    _x_                       _BT_SEL_KEYS_                       &none              _DISP_KEYS_          &none         _x_ 
+        // │         │         │         │         │   BT4   │   │   BT2   │  BRI DN │ BRI UP  │  PSCRN  │         │
+    _x_     &kp F9    &kp F10   &kp F11   &kp F12   &bt BT_SEL 4  &bt BT_SEL 2       _DISP_KEYS_          &none         _x_ 
         // ╰─────────┼─────────┼─────────┼─────────┼─────────┤   ├─────────┼─────────┼─────────┼─────────┼─────────╯
         //                     │         │   BASE  │   SPC   │   │  ENTER  │   BSCP  │         │
                                 &none     &to L_BS  &kp SPACE     &kp RET   &kp BSPC  &none
