@@ -244,8 +244,8 @@
             symbol_layer { // layer 0 (defaultm coleman-dh w/ bspc del)
             bindings = <
         // ╭─────────────────────────────────────────────────╮   ╭─────────────────────────────────────────────────╮
-        // │    `    │    <    │    >    │    "    │    '    │   │    &    │         │    [    │    ]    │    %    │
-    _x_     &kp GRAVE &kp LT    &kp GT    &kp DQT   &kp SQT       &kp AMPS  &none     &kp LBKT  &kp RBKT  &kp PRCNT     _x_ 
+        // │    `    │    <    │    >    │    "    │    '    │   │    &    │TAB(temp)│    [    │    ]    │    %    │
+    _x_     &kp GRAVE &kp LT    &kp GT    &kp DQT   &kp SQT       &kp AMPS  &kp TAB   &kp LBKT  &kp RBKT  &kp PRCNT     _x_ 
         // ├─────────┼─────────┼─────────┼─────────┼─────────┤   ├─────────┼─────────┼─────────┼─────────┼─────────┤
         // │    !    │    -    │    +    │    =    │    #    │   │    |    │    :    │    (    │    )    │    ?    │
     _x_     HRML(EXCL, KP_MINUS, KP_PLUS,   EQUAL)  &kp HASH      &kp PIPE  HRMR(COLON,  LPAR,    RPAR,     QMARK)      _x_ 
