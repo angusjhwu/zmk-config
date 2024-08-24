@@ -183,7 +183,7 @@
     _x_     &kp Z     &kp X     &kp C     &kp D     &kp V         &kp K     &kp H     &kp COMMA &kp DOT   &kp SLASH     _x_ 
         // ╰─────────┼─────────┼─────────┼─────────┼─────────┤   ├─────────┼─────────┼─────────┼─────────┼─────────╯
         //                     │         │   TAB   │   SPC   │   │  ENTER  │   BSPC  │         │
-                               &mo L_NN &mt L_SM TAB &kp SPACE   &kp RET  &mt L_SM BSPC &mo L_NN
+                               &mo L_NN &lt L_SM TAB &kp SPACE   &kp RET  &lt L_SM BSPC &mo L_NN
         //                     ╰─────────────────────────────╯   ╰─────────────────────────────╯
             >; // add TAB?? ***************
             };
