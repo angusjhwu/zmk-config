@@ -183,7 +183,7 @@
     _x_     &kp Z     &kp X     &kp C     &kp D     &kp V         &kp K     &kp H     &kp COMMA &kp DOT   &kp SLASH     _x_ 
         // ╰─────────┼─────────┼─────────┼─────────┼─────────┤   ├─────────┼─────────┼─────────┼─────────┼─────────╯
         //                     │         │   TAB   │   SPC   │   │  ENTER  │   BSPC  │         │
-                                &mo L_SM  &kp TAB   &kp SPACE     &kp RET   &kp BSPC  &mo L_SM
+                               &mo L_NN &mt L_SM TAB &kp SPACE   &kp RET  &mt L_SM BSPC &mo L_NN
         //                     ╰─────────────────────────────╯   ╰─────────────────────────────╯
             >; // add TAB?? ***************
             };
@@ -222,8 +222,8 @@
         // │         │    {    │    }    │    [    │    ]    │   │    1    │    2    │    3    │    +    │    *    │
     _x_     &none     &kp LBRC  &kp RBRC  &kp LBKT  &kp RBKT      &kp N1    &kp N2    &kp N3  &kp KP_PLUS &kp KP_MULTIPLY   _x_ 
         // ╰─────────┼─────────┼─────────┼─────────┼─────────┤   ├─────────┼─────────┼─────────┼─────────┼─────────╯
-        //                     │         │   TAB   │   SPC   │   │  ENTER  │    0    │    .    │
-                                &none     &kp TAB  &kp SPACE     &kp RET   &kp N0     &kp DOT
+        //                     │  arrows │   TAB   │   SPC   │   │  ENTER  │    0    │    .    │
+                                &mo L_NN  &kp TAB   &kp SPACE     &kp RET   &kp N0     &kp DOT
         //                     ╰─────────────────────────────╯   ╰─────────────────────────────╯
             >;
             };
@@ -249,8 +249,8 @@
             symbol_layer { // layer 0 (defaultm coleman-dh w/ bspc del)
             bindings = <
         // ╭─────────────────────────────────────────────────╮   ╭─────────────────────────────────────────────────╮
-        // │    `    │    <    │    >    │    "    │    '    │   │    &    │TAB(temp)│    [    │    ]    │    %    │
-    _x_     &kp GRAVE &kp LT    &kp GT    &kp DQT   &kp SQT       &kp AMPS  &kp TAB   &kp LBKT  &kp RBKT  &kp PRCNT     _x_ 
+        // │    `    │    <    │    >    │    "    │    '    │   │    &    │         │    [    │    ]    │    %    │
+    _x_     &kp GRAVE &kp LT    &kp GT    &kp DQT   &kp SQT       &kp AMPS  &none     &kp LBKT  &kp RBKT  &kp PRCNT     _x_ 
         // ├─────────┼─────────┼─────────┼─────────┼─────────┤   ├─────────┼─────────┼─────────┼─────────┼─────────┤
         // │    !    │    -    │    +    │    =    │    #    │   │    |    │    :    │    (    │    )    │    ?    │
     _x_     HRML(EXCL, KP_MINUS, KP_PLUS,   EQUAL)  &kp HASH      &kp PIPE  HRMR(COLON,  LPAR,    RPAR,     QMARK)      _x_ 
