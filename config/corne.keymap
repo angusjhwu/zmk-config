@@ -120,11 +120,11 @@
                 key-positions = <LT3 LT4>; // top left 2 keys
                 bindings = <&kp ESCAPE>;
             };
-            combo_tab {
-                timeout-ms = <50>;
-                key-positions = <LM3 LM4>; // top left 2 keys
-                bindings = <&kp TAB>;
-            };
+            // combo_tab {
+            //     timeout-ms = <50>;
+            //     key-positions = <LM3 LM4>; // top left 2 keys
+            //     bindings = <&kp TAB>;
+            // };
             combo_semi {
                 timeout-ms = <50>;
                 key-positions = <RB2 RB3>;    // , .
@@ -182,8 +182,8 @@
         // │    Z    │    X    │    C    │    D    │    V    │   │    K    │    H    │    ,    │    .    │    /    │
     _x_     &kp Z     &kp X     &kp C     &kp D     &kp V         &kp K     &kp H     &kp COMMA &kp DOT   &kp SLASH     _x_ 
         // ╰─────────┼─────────┼─────────┼─────────┼─────────┤   ├─────────┼─────────┼─────────┼─────────┼─────────╯
-        //                     │         │   BASE  │   SPC   │   │  ENTER  │   BSPC  │         │
-                                &mo L_SM  &to L_BS  &kp SPACE     &kp RET   &kp BSPC  &mo L_SM
+        //                     │         │   TAB   │   SPC   │   │  ENTER  │   BSPC  │         │
+                                &mo L_SM  &kp TAB   &kp SPACE     &kp RET   &kp BSPC  &mo L_SM
         //                     ╰─────────────────────────────╯   ╰─────────────────────────────╯
             >; // add TAB?? ***************
             };
@@ -204,8 +204,8 @@
         // │         │         │         │         │   BT4   │   │   BT2   │  BRI DN │ BRI UP  │  PSCRN  │         │
     _x_     &kp F9    &kp F10   &kp F11   &kp F12   &bt BT_SEL 4  &bt BT_SEL 2       _DISP_KEYS_          &none         _x_ 
         // ╰─────────┼─────────┼─────────┼─────────┼─────────┤   ├─────────┼─────────┼─────────┼─────────┼─────────╯
-        //                     │         │   BASE  │   SPC   │   │  ENTER  │   BSCP  │         │
-                                &none     &to L_BS  &kp SPACE     &kp RET   &kp BSPC  &none
+        //                     │         │   TAB   │   SPC   │   │  ENTER  │   BSCP  │         │
+                                &none     &kp TAB   &kp SPACE     &kp RET   &kp BSPC  &none
         //                     ╰─────────────────────────────╯   ╰─────────────────────────────╯
             >;
             };
@@ -222,8 +222,8 @@
         // │         │    {    │    }    │    [    │    ]    │   │    1    │    2    │    3    │    +    │    *    │
     _x_     &none     &kp LBRC  &kp RBRC  &kp LBKT  &kp RBKT      &kp N1    &kp N2    &kp N3  &kp KP_PLUS &kp KP_MULTIPLY   _x_ 
         // ╰─────────┼─────────┼─────────┼─────────┼─────────┤   ├─────────┼─────────┼─────────┼─────────┼─────────╯
-        //                     │         │   BASE  │   SPC   │   │  ENTER  │    0    │    .    │
-                                &none     &to L_BS  &kp SPACE     &kp RET   &kp N0     &kp DOT
+        //                     │         │   TAB   │   SPC   │   │  ENTER  │    0    │    .    │
+                                &none     &kp TAB  &kp SPACE     &kp RET   &kp N0     &kp DOT
         //                     ╰─────────────────────────────╯   ╰─────────────────────────────╯
             >;
             };
@@ -240,8 +240,8 @@
         // │    +    │    *    │    1    │    2    │    3    │   │         │         │         │         │         │
  _x_ &kp KP_PLUS &kp KP_MULTIPLY &kp N1   &kp N2    &kp N3        &none     &none     &none     &none     &none             _x_ 
         // ╰─────────┼─────────┼─────────┼─────────┼─────────┤   ├─────────┼─────────┼─────────┼─────────┼─────────╯
-        //                     │    0    │    .    │   SPC   │   │  ENTER  │   BSPC  │  BASE   │
-                                &kp N0    &kp DOT   &kp SPACE     &kp RET   &kp BSPC  &to L_BS
+        //                     │    0    │    .    │   SPC   │   │  ENTER  │   BSPC  │   NONE  │
+                                &kp N0    &kp DOT   &kp SPACE     &kp RET   &kp BSPC  &none
         //                     ╰─────────────────────────────╯   ╰─────────────────────────────╯
             >;
             };
@@ -258,8 +258,8 @@
         // │    ^    │    /    │    *    │    \    │    _    │   │    ~    │    $    │    {    │    }    │    @    │
  _x_ &kp CARET &kp KP_DIVIDE &kp KP_MULTIPLY &kp BSLH &kp UNDER   &kp TILDE &kp DLLR  &kp LBRC  &kp RBRC  &kp AT        _x_ 
         // ╰─────────┼─────────┼─────────┼─────────┼─────────┤   ├─────────┼─────────┼─────────┼─────────┼─────────╯
-        //                     │         │   BASE  │   SPC   │   │  ENTER  │  BSPC   │         │
-                                &none     &to L_BS  &kp SPACE     &kp RET   &kp BSPC  &none
+        //                     │         │   TAB   │   SPC   │   │  ENTER  │  BSPC   │         │
+                                &none     &kp TAB   &kp SPACE     &kp RET   &kp BSPC  &none
         //                     ╰─────────────────────────────╯   ╰─────────────────────────────╯
             >;
             };
