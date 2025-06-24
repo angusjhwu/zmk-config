@@ -120,11 +120,6 @@
                 key-positions = <LT3 LT4>; // top left 2 keys
                 bindings = <&kp ESCAPE>;
             };
-            // combo_tab {
-            //     timeout-ms = <50>;
-            //     key-positions = <LM3 LM4>; // top left 2 keys
-            //     bindings = <&kp TAB>;
-            // };
             combo_semi {
                 timeout-ms = <50>;
                 key-positions = <RB2 RB3>;    // , .
@@ -145,25 +140,20 @@
                 key-positions = <RM0 RM1 RM2>;    // right home row in
                 bindings = <&to L_NM>;
             };
-            // combo_numpad {
-            //     timeout-ms = <100>;
-            //     key-positions = <RT1 RT2 RT3>;    // right top middle
-            //     bindings = <&tog L_NM>;
-            // };
             combo_numnav {
                 timeout-ms = <100>;
                 key-positions = <LM0 LM1 LM2>;    // left home row in
                 bindings = <&to L_NN>;
             };
-            // combo_numnav {
-            //     timeout-ms = <100>;
-            //     key-positions = <LT1 LT2 LT3>;    // left top middle
-            //     bindings = <&tog L_NN>;
-            // };
             combo_media {
                 timeout-ms = <100>;
                 key-positions = <LB1 LB2 LB3>;    // left bottom middle
                 bindings = <&to L_MD>;
+            };
+            combo_capsword {
+                timeout-ms = <50>;
+                key-positions = <LM1 RM3>;
+                bindings = <&caps_word>;
             };
         };
 
@@ -204,7 +194,7 @@
         // │         │         │         │         │   BT4   │   │   BT2   │  BRI DN │ BRI UP  │  PSCRN  │         │
     _x_     &kp F9    &kp F10   &kp F11   &kp F12   &bt BT_SEL 4  &bt BT_SEL 2       _DISP_KEYS_          &none         _x_ 
         // ╰─────────┼─────────┼─────────┼─────────┼─────────┤   ├─────────┼─────────┼─────────┼─────────┼─────────╯
-        //                     │         │   TAB   │   SPC   │   │  ENTER  │   BSCP  │         │
+        //                     │         │   TAB   │   SPC   │   │  ENTER  │   BSPC  │         │
                                 &none     &kp TAB   &kp SPACE     &kp RET   &kp BSPC  &none
         //                     ╰─────────────────────────────╯   ╰─────────────────────────────╯
             >;
@@ -213,7 +203,7 @@
             numpad_layer {
             bindings = <
         // ╭─────────────────────────────────────────────────╮   ╭─────────────────────────────────────────────────╮
-        // │    !    │    %    │    ^    │    <    │    >    │   │    7    │    8    │    9    │   BSCP  │    =    │
+        // │    !    │    %    │    ^    │    <    │    >    │   │    7    │    8    │    9    │   BSPC  │    =    │
     _x_     &kp EXCL  &kp PRCNT &kp CARET &kp LT    &kp GT        &kp N7    &kp N8    &kp N9    &kp BSPC  &kp EQUAL         _x_ 
         // ├─────────┼─────────┼─────────┼─────────┼─────────┤   ├─────────┼─────────┼─────────┼─────────┼─────────┤
         // │    :    │    \    │    _    │    (    │    )    │   │    4    │    5    │    6    │    -    │    /    │
@@ -226,7 +216,7 @@
                                 &mo L_NN  &kp TAB   &kp SPACE     &kp RET   &kp N0     &kp DOT
         //                     ╰─────────────────────────────╯   ╰─────────────────────────────╯
             >;
-            };
+            };'
             
             numnav_layer {
             bindings = <
@@ -238,7 +228,7 @@
     _x_     HRML(KP_MINUS, BSLH,   N4,       N5)    &kp N6        &kp END   &kp LEFT  &kp DOWN  &kp RIGHT &kp PG_DN         _x_ 
         // ├─────────┼─────────┼─────────┼─────────┼─────────┤   ├─────────┼─────────┼─────────┼─────────┼─────────┤
         // │    +    │    *    │    1    │    2    │    3    │   │         │         │         │         │         │
- _x_ &kp KP_PLUS &kp KP_MULTIPLY &kp N1   &kp N2    &kp N3        &none     &none     &none     &none     &none             _x_ 
+ _x_ &kp KP_PLUS &kp KP_MULTIPLY &kp N1   &kp N2    &kp N3        &none     &kp RGUI  &kp RALT  &kp RCTRL &hmr RSHFT        _x_ 
         // ╰─────────┼─────────┼─────────┼─────────┼─────────┤   ├─────────┼─────────┼─────────┼─────────┼─────────╯
         //                     │    0    │    .    │   SPC   │   │  ENTER  │   BSPC  │   NONE  │
                                 &kp N0    &kp DOT   &kp SPACE     &kp RET   &kp BSPC  &none
