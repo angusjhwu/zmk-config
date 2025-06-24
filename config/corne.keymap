@@ -39,9 +39,15 @@
     quick-tap-ms = <QUICK_TAP_MS>;
 };
 
-// Home row mods
+// Home Row Mods
 #define HRML(k1, k2, k3, k4) &hml LSHFT k1 &hml LCTRL k2 &hml LALT  k3 &hml LGUI k4
 #define HRMR(k1, k2, k3, k4) &hmr RGUI k1 &hmr RALT  k2 &hmr RCTRL k3 &hmr RSHFT k4
+
+// Media Controls
+#define _BT_SEL_KEYS_ &bt BT_SEL 0 &bt BT_SEL 1 &bt BT_SEL 2 &bt BT_SEL 3 &bt BT_CLR
+#define _VOL_KEYS_ &kp C_VOL_DN &kp C_VOL_UP &kp C_MUTE
+#define _PLAY_KEYS_ &kp C_PREV &kp C_PP &kp C_NEXT
+#define _DISP_KEYS_ &kp C_BRI_DN &kp C_BRI_UP &kp PSCRN
 
 / {
         behaviors {
@@ -136,10 +142,7 @@
             >; // add TAB?? ***************
             };
 
-#define _BT_SEL_KEYS_ &bt BT_SEL 0 &bt BT_SEL 1 &bt BT_SEL 2 &bt BT_SEL 3 &bt BT_CLR
-#define _VOL_KEYS_ &kp C_VOL_DN &kp C_VOL_UP &kp C_MUTE
-#define _PLAY_KEYS_ &kp C_PREV &kp C_PP &kp C_NEXT
-#define _DISP_KEYS_ &kp C_BRI_DN &kp C_BRI_UP &kp PSCRN
+
             media_layer { // layer 1 
             bindings = <
         // ╭─────────────────────────────────────────────────╮   ╭─────────────────────────────────────────────────╮
