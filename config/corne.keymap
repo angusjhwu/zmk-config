@@ -200,7 +200,7 @@
                                 &mo L_NN  &kp TAB   &kp SPACE     &kp RET   &kp N0     &kp DOT
         //                     ╰─────────────────────────────╯   ╰─────────────────────────────╯
             >;
-            };'
+            };
             
             numnav_layer {
             bindings = <
