@@ -9,7 +9,7 @@
 #include <dt-bindings/zmk/bt.h>
 
 #include "zmk-helpers/helper.h"
-#include "zmk-helpers/key-labels/42.h"
+#include "zmk-helpers/key-labels/42.h"  // Must use Corne42 template because cornes are usually 6-column
 
 // Alias
 #define ___      &trans
@@ -188,13 +188,13 @@
             bindings = <
 //         ╭─────────────────────────────────────────────────╮   ╭─────────────────────────────────────────────────╮
 //         │    !    │    %    │    7    │    8    │    9    │   │   HOME  │         │    ^    │         │  PG_UP  │
-    _x_     &kp EXCL  &kp PRCNT &kp N7    &kp N8    &kp N9        &kp HOME  &none     &kp UP    &none     &kp PG_UP         _x_ 
+    _x_     &kp EXCL  &kp PRCNT &kp N7    &kp N8    &kp N9        &kp HOME  &none     &kp UP    &none     &kp PG_UP     _x_ 
 //         ├─────────┼─────────┼─────────┼─────────┼─────────┤   ├─────────┼─────────┼─────────┼─────────┼─────────┤
 //         │    -    │    /    │    4    │    5    │    6    │   │   END   │    <-   │    V    │    ->   │  PG_DN  │
-    _x_     HRML(KP_MINUS, BSLH,   N4,       N5)    &kp N6        &kp END   &kp LEFT  &kp DOWN  &kp RIGHT &kp PG_DN         _x_ 
+    _x_     HRML(KP_MINUS, BSLH,   N4,       N5)    &kp N6        &kp END   &kp LEFT  &kp DOWN  &kp RIGHT &kp PG_DN     _x_ 
 //         ├─────────┼─────────┼─────────┼─────────┼─────────┤   ├─────────┼─────────┼─────────┼─────────┼─────────┤
 //         │    +    │    *    │    1    │    2    │    3    │   │         │         │         │         │         │
- _x_ &kp KP_PLUS &kp KP_MULTIPLY &kp N1   &kp N2    &kp N3        &none     &kp RGUI  &kp RALT  &kp RCTRL &hmr RSHFT        _x_ 
+_x_  &kp KP_PLUS &kp KP_MULTIPLY &kp N1   &kp N2    &kp N3        &none     &kp RGUI  &kp RALT  &kp RCTRL &kp RSHFT     _x_ 
 //         ╰─────────┼─────────┼─────────┼─────────┼─────────┤   ├─────────┼─────────┼─────────┼─────────┼─────────╯
 //                             │    0    │    .    │   SPC   │   │  ENTER  │   BSPC  │   NONE  │
                                 &kp N0    &kp DOT   &kp SPACE     &kp RET   &kp BSPC  &none
